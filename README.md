@@ -1,6 +1,6 @@
 # Calculadora de Consumos y propinas
 
-Esta es una aplicación web, permite a los usuarios, calcular los consumos y las propinas de un menu en particular. Está desarrollada con **React** , **TypeScript** y **Tailwind**.
+Esta es una aplicación web, permite a los usuarios, calcular los consumos y las propinas de un menu en particular. Está desarrollada con **React** , **TypeScript** y **TailwindCSS**.
 
 ## Características
 

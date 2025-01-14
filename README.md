@@ -12,7 +12,7 @@ Esta es una aplicación web, permite a los usuarios, calcular los consumos y las
 ## Tecnologías
 
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **JavaScript**: Lenguaje de programación principal del proyecto.
+- **TypeScript**: Super set de javaScrit de tipado fuerte.
 - **TailwindCSS**: Estilos básicos para la interfaz.
 
 ## Instalación

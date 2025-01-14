@@ -3,9 +3,10 @@ import OrderContents from "./components/OrderContents";
 import { menuItems } from "./data/db";
 import useOrder from "./hooks/userOrder";
 import OrderTotal from "./components/OrderTotal";
+import TipPorsentageForm from "./components/TipPorsentageForm";
 
 function App() {
-  const { addItem, order, removeItem } = useOrder();
+  const { addItem, order, removeItem, tip, setTip, placeOrder } = useOrder();
   return (
     <>
       <header className=" bg-teal-500 py-5">
@@ -23,8 +24,15 @@ function App() {
           </div>
         </div>
         <div className="border border-dashed border-slate-300 p-5 raunded-lg space-y-10">
-          <OrderContents order={order} removeItem={removeItem} />
-          <OrderTotal />
+          {order.length > 0 ? (
+            <>
+              <OrderContents order={order} removeItem={removeItem} />
+              <TipPorsentageForm setTip={setTip} tip={tip} />
+              <OrderTotal order={order} tip={tip} placeOrder={placeOrder} />
+            </>
+          ) : (
+            <p className="text-center"> La orden esta vacia</p>
+          )}
         </div>
       </main>
     </>
